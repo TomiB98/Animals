@@ -1,0 +1,8 @@
+.bearCard {
+    background-image: url("../../asets/Image=2.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid black;
+  height: 500px;
+  width: auto;
+}

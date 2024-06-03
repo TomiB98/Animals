@@ -1,0 +1,42 @@
+/* .bearCard {
+    background-image: url("../../asets/Image=3.png");
+  background-size: cover;
+  background-position: center;
+  border: 3px solid black;
+  height: 500px;
+  width: auto;
+} */
+.bearCard {
+  background-image: url("../../asets/Image=3.png");
+  background-size: contain;
+  background-repeat: no-repeat; /* Evitar repetir la imagen */
+  background-position: center;
+  border: 3px solid black;
+  height: 500px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bearCardCont {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el título (h1) dentro del contenedor */
+.bearCard h1 {
+  color: white; /* Color del texto */
+  /* Estilos adicionales para el título si es necesario */
+}
+
+/* Estilos para el párrafo (p) dentro del contenedor */
+.bearCard p {
+  color: white; /* Color del texto */
+  /* Estilos adicionales para el párrafo si es necesario */
+}
+
+/* Estilos para el botón dentro del contenedor */
+/* .bearCard button {
+} */
