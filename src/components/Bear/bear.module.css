@@ -9,7 +9,7 @@
 .bearCard {
   background-image: url("../../asets/Image=3.png");
   background-size: contain;
-  background-repeat: no-repeat; /* Evitar repetir la imagen */
+  background-repeat: no-repeat;
   background-position: center;
   border: 3px solid black;
   height: 500px;
@@ -23,18 +23,28 @@
 .bearCardCont {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el título (h2) dentro del contenedor */
+.bearCard h2 {
+  color: rgb(95, 236, 255);
+  font-size: larger;
+  font-weight: 300;
+  /* -webkit-text-stroke: 0.2px;
+  -webkit-text-stroke-color: rgb(7, 0, 0); */
 }
 
 /* Estilos para el título (h1) dentro del contenedor */
 .bearCard h1 {
-  color: white; /* Color del texto */
-  /* Estilos adicionales para el título si es necesario */
+  color: white;
 }
 
 /* Estilos para el párrafo (p) dentro del contenedor */
 .bearCard p {
-  color: white; /* Color del texto */
-  /* Estilos adicionales para el párrafo si es necesario */
+  color: white; 
 }
 
 /* Estilos para el botón dentro del contenedor */

@@ -1,3 +1,4 @@
-.Bear {
-    
+.home {
+    display: flex;
+    flex-direction: row;
 }

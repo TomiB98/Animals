@@ -1,8 +1,53 @@
-.bearCard {
+/* .bearCard {
     background-image: url("../../asets/Image=1.png");
     background-size: cover;
     background-position: center;
     border: 3px solid black;
     height: 500px;
     width: auto;
+} */
+
+.tigerCard {
+    background-image: url("../../asets/Image=1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid black;
+    height: 500px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.tigerCardCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para el título (h2) dentro del contenedor */
+.tigerCard h2 {
+    color: rgb(95, 236, 255);
+    font-size: larger;
+    font-weight: 300;
+    /* -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: rgb(7, 0, 0); */
+}
+
+/* Estilos para el título (h1) dentro del contenedor */
+.tigerCard h1 {
+    color: white;
+}
+
+/* Estilos para el párrafo (p) dentro del contenedor */
+.tigerCard p {
+    color: white;
+}
+
+/* Estilos para el botón dentro del contenedor */
+/* .tigerCard button {
+  } */
