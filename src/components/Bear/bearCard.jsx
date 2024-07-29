@@ -2,15 +2,15 @@ import style from './bear.module.css'
 
 function Bear() {
     return (
-        <div className={style.bearCard}>
             <div className={style.bearCardCont}>
-                <h2>B E A R S</h2>
-                <h1>Polar Bear: An impresive size</h1>
-                <p>Is one of the most emblematic victims of global warming. The melting
-                    of the Arctic is reducing its hunting ground.</p>
-                <button>Donate Now</button>
+                <div className={style.text}>
+                    <h1>B E A R S</h1>
+                    <h2>Polar Bear: An impresive size</h2>
+                    <p>Is one of the most emblematic victims of global warming. The melting
+                        of the Arctic is reducing its hunting ground.</p>
+                    <button className={style.btnDonate}>DONATE NOW</button>
+                </div>
             </div>
-        </div>
     )
 };
 

@@ -2,3 +2,33 @@
     display: flex;
     flex-direction: row;
 }
+
+.first {
+    /* flex: 2; */
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vb;
+    /* width: 55%; */
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.second {
+    width: 23%;
+    height: 100vb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.btnChange {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    color: aliceblue;
+    letter-spacing: 5px;
+    font-size: smaller;
+}

@@ -6,7 +6,8 @@
   height: 500px;
   width: auto;
 } */
-.bearCard {
+
+/* .bearCard {
   background-image: url("../../asets/Image=3.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -18,7 +19,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 .bearCardCont {
   display: flex;
@@ -28,9 +29,14 @@
   text-align: center;
 }
 
+.text {
+  width: 65%;
+  text-align: left;
+}
+
 /* Estilos para el título (h2) dentro del contenedor */
-.bearCard h2 {
-  color: rgb(95, 236, 255);
+.bearCardCont h1 {
+  color: rgb(112, 237, 253);
   font-size: larger;
   font-weight: 300;
   /* -webkit-text-stroke: 0.2px;
@@ -38,15 +44,44 @@
 }
 
 /* Estilos para el título (h1) dentro del contenedor */
-.bearCard h1 {
+.bearCardCont h2 {
   color: white;
+  font-weight: 500;
 }
 
 /* Estilos para el párrafo (p) dentro del contenedor */
-.bearCard p {
-  color: white; 
+.bearCardCont p {
+  color: white;
+  font-weight: 200;
 }
 
 /* Estilos para el botón dentro del contenedor */
-/* .bearCard button {
-} */
+.btnDonate {
+  background-color: rgb(112, 237, 253);
+  border: none;
+  font-weight: 600;
+  font-size: x-small;
+  letter-spacing: 5px;
+  height: 40px;
+  width: 180px;
+  border: solid rgb(52, 152, 165) 1px;
+  border-radius: 20px;
+  margin-top: 30px;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.btnDonate:hover {
+  background-color: #95d0f7;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.btnDonate:active {
+  background-color: #fcfcfc;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}

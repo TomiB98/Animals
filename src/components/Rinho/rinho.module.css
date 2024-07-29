@@ -7,7 +7,7 @@
   width: auto;
 } */
 
-.rinhoCard {
+/* .rinhoCard {
   background-image: url("../../asets/Image=2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,10 +18,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
-.rinhoCard > div:nth-child(2) {
-  /* flex: 2; */
+/* .rinhoCard > div:nth-child(2) {
+  //flex: 2;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -30,34 +30,29 @@
   height: 100vb;
   width: 55%;
   background-color: rgba(0, 0, 0, 0.466);
-}
+} */
 
-.rinhoCard > div:first-child,
+/* .rinhoCard > div:first-child,
 .rinhoCard > div:nth-child(3) {
   flex: 1;
   height: 100vb;
   background-color: rgba(0, 0, 0, 0.267);
-}
+} */
 
-.rinhoCard > div {
+/* .rinhoCard > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.btnChange {
+/* .btnChange {
   background-color: rgba(240, 248, 255, 0);
   border: none;
   color: aliceblue;
   letter-spacing: 5px;
   font-size: smaller;
-}
-
-.text {
-  width: 65%;
-  text-align: left;
-}
+} */
 
 .rinhoCardCont {
   display: flex;
@@ -67,8 +62,13 @@
   text-align: center;
 }
 
+.text {
+  width: 65%;
+  text-align: left;
+}
+
 /* Estilos para el título (h2) dentro del contenedor */
-.rinhoCard h2 {
+.rinhoCardCont h1 {
   color: rgb(112, 237, 253);
   font-size: larger;
   font-weight: 300;
@@ -77,13 +77,13 @@
 }
 
 /* Estilos para el título (h1) dentro del contenedor */
-.rinhoCard h1 {
+.rinhoCardCont h2 {
   color: white;
   font-weight: 500;
 }
 
 /* Estilos para el párrafo (p) dentro del contenedor */
-.rinhoCard p {
+.rinhoCardCont p {
   color: white;
   font-weight: 200;
 }

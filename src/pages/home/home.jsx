@@ -6,9 +6,24 @@ import Rinho from '../../components/Rinho/rinhoCard'
 function Home() {
     return (
         <div className={style.home}>
-            {/* <div><Tiger /></div> */}
-            <div><Rinho /></div>
-            {/* <div><Bear /></div> */}
+
+            <div className={style.second}>
+                <button className={style.btnChange}>TIGERS</button>
+            </div>
+
+            {/* <div className={style.first}><Tiger /></div> */}
+
+            {/* <div className={style.second}>
+                <button className={style.btnChange}>RHINOCEROS</button>
+            </div> */}
+
+            <div className={style.first}><Rinho /></div>
+
+            <div className={style.second}>
+                <button className={style.btnChange}>BEARS</button>
+            </div>
+
+            {/* <div className={style.first}><Bear /></div> */}
         </div>
 
     )
