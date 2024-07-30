@@ -34,18 +34,19 @@
   text-align: left;
 }
 
-/* Estilos para el título (h2) dentro del contenedor */
+/* Estilos para el título (h1) dentro del contenedor */
 .bearCardCont h1 {
   color: rgb(112, 237, 253);
-  font-size: larger;
+  font-size: small;
   font-weight: 300;
   /* -webkit-text-stroke: 0.2px;
   -webkit-text-stroke-color: rgb(7, 0, 0); */
 }
 
-/* Estilos para el título (h1) dentro del contenedor */
+/* Estilos para el título (h2) dentro del contenedor */
 .bearCardCont h2 {
   color: white;
+  font-size: xx-large;
   font-weight: 500;
 }
 
@@ -67,7 +68,6 @@
   border: solid rgb(52, 152, 165) 1px;
   border-radius: 20px;
   margin-top: 30px;
-
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
