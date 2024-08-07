@@ -6,11 +6,12 @@ function Bear() {
     return (
         <AnimatePresence>
             <motion.div className={style.bearCard}
-                initial={{ scaleX: 0.23, originX: 1 }}
+                initial={{ scaleX: 0.4, originX: 1 }}
                 animate={{ scaleX: 1, originX: 1 }}
-                transition={{ duration: 0.5 }} >
+                transition={{ duration: 0.8 }} >
 
                 <div className={style.bearCardCont}>
+
                     <div className={style.text}>
                         <h1>B E A R S</h1>
                         <h2>Polar Bear: <br /> An impresive size</h2>
@@ -18,6 +19,7 @@ function Bear() {
                             of the Arctic is reducing its hunting ground.</p>
                         <button className={style.btnDonate}>DONATE NOW</button>
                     </div>
+                    
                 </div>
                 
             </motion.div>
