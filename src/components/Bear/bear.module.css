@@ -10,6 +10,18 @@
   margin-right: 1px;
 }
 
+@media (max-width: 649px) {
+  .bearCard {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    background-image: url("../../asets/Image=3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
 /* Estilos para la ubicacion del contenedor */
 .bearCardCont {
   display: flex;
@@ -17,6 +29,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 649px) {
+  .bearCardCont {
+      background-color: rgba(0, 0, 0, 0.171);
+  }
 }
 
 /* Estilos para la ubicacion del contenedor del texto */
@@ -41,6 +59,18 @@
   font-weight: 500;
 }
 
+@media (max-width: 973px) {
+  .bearCardCont h2 {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 649px) {
+  .bearCardCont h2 {
+    font-size: 24px;
+  }
+}
+
 /* Estilos para el párrafo (p) dentro del contenedor */
 .bearCardCont p {
   color: white;
@@ -62,6 +92,15 @@
   transition: all 0.3s;
   -webkit-transition: all 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 649px) {
+  .btnDonate {
+    font-size: 8px;
+    height: 30px;
+    width: 130px;
+    margin-bottom: 15px;
+  }
 }
 
 /* Estilos para el efecto cuando estoy sobre el botón dentro del contenedor */
