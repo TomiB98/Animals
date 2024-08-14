@@ -66,6 +66,20 @@
   margin-right: 1px;
 }
 
+@media (max-width: 649px) {
+  .rinhoCard {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    /* margin-bottom: 1px; */
+    /* border-bottom: solid rgb(52, 152, 165) 1px; */
+    background-image: url("../../asets/Image=2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
 /* Estilos para la ubicacion del contenedor */
 .rinhoCardCont {
   display: flex;
@@ -73,6 +87,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media (max-width: 649px) {
+  .rinhoCardCont {
+      background-color: rgba(0, 0, 0, 0.171);
+  }
 }
 
 /* Estilos para la ubicacion del contenedor del texto */
@@ -97,6 +117,18 @@
   font-weight: 500;
 }
 
+@media (max-width: 973px) {
+  .rinhoCardCont h2 {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 649px) {
+  .rinhoCardCont h2 {
+    font-size: 24px;
+  }
+}
+
 /* Estilos para el párrafo (p) dentro del contenedor */
 .rinhoCardCont p {
   color: white;
@@ -118,6 +150,15 @@
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   cursor: pointer;
+}
+
+@media (max-width: 649px) {
+  .btnDonate {
+    font-size: 8px;
+    height: 30px;
+    width: 130px;
+    margin-bottom: 15px;
+  }
 }
 
 /* Estilos para el efecto cuando estoy sobre el botón dentro del contenedor */
