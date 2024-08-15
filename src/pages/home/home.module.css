@@ -74,11 +74,18 @@
 }
 
 /* Estilos para el efecto cuando estoy sobre el botón dentro del contenedor */
+.btnAnimals:hover .plus {
+    opacity: 1;
+}
+
+.btnAnimals:hover .name {
+    transform: translateY(65%)
+}
+
 .hovered .plus {
     opacity: 1;
 }
 
-/* Estilos para el efecto cuando estoy sobre el botón dentro del contenedor */
 .hovered .name {
     transform: translateY(65%);
 }

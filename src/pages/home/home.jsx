@@ -69,7 +69,7 @@ function Home() {
                                 animate={initialLoad ? false : { opacity: 1 }}
                                 transition={{ duration: 0.7 }}>
 
-                                <button className={`${style.btnAnimals} ${hoveredButton === 0 ? style.hovered : ''}`} >
+                                <button className={`${style.btnAnimals} ${hoveredButton === 0 ? style.hovered : ''}`}>
                                     <div className={style.name}>TIGERS</div>
                                     <div className={style.plus}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
@@ -90,11 +90,12 @@ function Home() {
                     {/* ####Button Rhinocero efect Tiger => Bear#### */}
                     {animal === 'bear' && prevAnimal === 'tiger' && (
                         <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
+                            onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                             initial={initialLoad ? false : { scaleX: 1.01, originX: -142 }}
                             animate={initialLoad ? false : { scaleX: 1, originX: -141 }}
                             transition={{ duration: 0.3 }}>
 
-                            <button className={style.btnAnimals} onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
+                            <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
                                 <div className={style.name}>RHINOCEROS</div>
                                 <div className={style.plus}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
@@ -122,11 +123,12 @@ function Home() {
                         <motion.div style={{ display: 'contents' }}>
 
                             <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
+                                onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                                 initial={initialLoad ? false : { opacity: 0 }}
                                 animate={initialLoad ? false : { opacity: 1 }}
                                 transition={{ duration: 0.7 }}>
 
-                                <button className={style.btnAnimals} onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
+                                <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
                                     <div className={style.name}>RHINOCEROS</div>
                                     <div className={style.plus}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
@@ -152,11 +154,12 @@ function Home() {
                             <Rhino animal={animal} prevAnimal={prevAnimal} load={initialLoad} />
 
                             <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
+                                onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                                 initial={initialLoad ? false : { opacity: 0 }}
                                 animate={initialLoad ? false : { opacity: 1 }}
                                 transition={{ duration: 0.7 }}>
 
-                                <button className={style.btnAnimals} onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
+                                <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
                                     <div className={style.name}>RHINOCEROS</div>
                                     <div className={style.plus}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
@@ -184,11 +187,12 @@ function Home() {
                     {/* ####Button Rhinocero efect Bear => Tiger#### */}
                     {animal === 'tiger' && prevAnimal === 'bear' && (
                         <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
+                            onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                             initial={initialLoad ? false : ({ scaleX: 1.01, originX: 142 })}
                             animate={initialLoad ? false : ({ scaleX: 1, originX: 141 })}
                             transition={{ duration: 0.3 }}>
 
-                            <button className={style.btnAnimals} onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
+                            <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
                                 <div className={style.name}>RHINOCEROS</div>
                                 <div className={style.plus}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
@@ -209,11 +213,12 @@ function Home() {
                             <Bear animal={animal} prevAnimal={prevAnimal} load={initialLoad} />
 
                             <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 2 ? '#00000045' : '#00000035' }}
+                                onClick={() => { handleAnimalShow('bear') }} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}
                                 initial={initialLoad ? false : { opacity: 0 }}
                                 animate={initialLoad ? false : { opacity: 1 }}
                                 transition={{ duration: 0.7 }}>
 
-                                <button className={style.btnAnimals} onClick={() => { handleAnimalShow('bear') }} onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>
+                                <button className={`${style.btnAnimals} ${hoveredButton === 2 ? style.hovered : ''}`}>
                                     <div className={style.name}>BEARS</div>
                                     <div className={style.plus}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 40 40" fill="none">
