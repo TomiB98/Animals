@@ -1,6 +1,7 @@
 /* Estilos para contenedor general */
 .bearCard {
-  width: 54%;
+  width: 50%;
+  /* width: 54%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
