@@ -21,8 +21,8 @@
 
 /* Estilos para contenedor de boton cambio de animales */
 .btnCont {
-    /* width: 25%; */
-    width: 23%;
+    width: 25%;
+    /* width: 23%; */
     height: 100vh;
     display: flex;
     flex-direction: column;

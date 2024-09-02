@@ -22,12 +22,26 @@ function Home() {
 
     useEffect(() => {
         setInitialLoad(false);
+
+        // Función para manejar el cambio de tamaño de pantalla
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 649);
         };
 
+        // Función para precargar imágenes
+        const preloadImages = () => {
+            const images = [imgTiger, imgRhino, imgBear];
+            images.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+
         handleResize();
         window.addEventListener('resize', handleResize);
+
+        // Precarga de imágenes cuando el componente se monta
+        preloadImages();
 
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -91,8 +105,8 @@ function Home() {
                     {animal === 'bear' && prevAnimal === 'tiger' && (
                         <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
                             onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
-                            initial={initialLoad ? false : { scaleX: 1.01, originX: -142 }}
-                            animate={initialLoad ? false : { scaleX: 1, originX: -141 }}
+                            initial={initialLoad ? false : { scaleX: 0.995, originX: 200 }}
+                            animate={initialLoad ? false : { scaleX: 1, originX: 200 }}
                             transition={{ duration: 0.3 }}>
 
                             <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
@@ -188,8 +202,8 @@ function Home() {
                     {animal === 'tiger' && prevAnimal === 'bear' && (
                         <motion.div className={style.btnCont} style={{ backgroundColor: hoveredButton === 1 ? '#00000045' : '#00000035' }}
                             onClick={() => handleAnimalShow('rhino')} onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
-                            initial={initialLoad ? false : ({ scaleX: 1.01, originX: 142 })}
-                            animate={initialLoad ? false : ({ scaleX: 1, originX: 141 })}
+                            initial={initialLoad ? false : ({ scaleX: 0.995, originX: -200 })}
+                            animate={initialLoad ? false : ({ scaleX: 1, originX: -200 })}
                             transition={{ duration: 0.3 }}>
 
                             <button className={`${style.btnAnimals} ${hoveredButton === 1 ? style.hovered : ''}`}>
