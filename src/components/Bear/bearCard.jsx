@@ -1,8 +1,37 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import Swal from "sweetalert2";
 
 import style from './bear.module.css'
 
 function Bear({ load, animal, prevAnimal }) {
+
+    function handleDonation() {
+        Swal.fire({
+            title: "Polar Bear",
+            text: "¡Are you sure you want to donate to save the polar bears!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Donate",
+            cancelButtonText: "Cancel",
+            confirmButtonColor: "#28a745",
+            cancelButtonColor: "#ff0000",
+            background: "rgba(0, 0, 0, 0.818)",  // Color de fondo personalizado
+            color: "#ffffff",
+        }).then((result) => {
+            // Verifica si el usuario hizo clic en "Ok"
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "¡Thank you for your donation!",
+                    text: "Your support helps protect polar bears.",
+                    icon: "success",
+                    confirmButtonText: "Close",
+                    background: "rgba(0, 0, 0, 0.818)",  // Color de fondo personalizado
+                    color: "#ffffff",
+                });
+            }
+        });
+    };
+
     return (
         <AnimatePresence>
             {(animal === 'bear' || prevAnimal === 'bear') &&
@@ -25,8 +54,8 @@ function Bear({ load, animal, prevAnimal }) {
                             <h2>Polar Bear: <br /> An impresive size</h2>
                             <p>Is one of the most emblematic victims of global warming. The melting
                                 of the Arctic is reducing its hunting ground.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
-                            
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
+
                         </motion.div>
 
                     </motion.div>

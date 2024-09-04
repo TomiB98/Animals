@@ -1,9 +1,37 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import Swal from "sweetalert2";
 
 import style from './rinho.module.css'
 
 function Rhino({ load, animal, prevAnimal }) {
-    
+
+    function handleDonation() {
+        Swal.fire({
+            title: "Java Rhinoceros",
+            text: "¡Are you sure you want to donate to save the Java Rhinoceros!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Donate",
+            cancelButtonText: "Cancel",
+            confirmButtonColor: "#28a745",
+            cancelButtonColor: "#ff0000",
+            background: "rgba(0, 0, 0, 0.818)",  // Color de fondo personalizado
+            color: "#ffffff",
+        }).then((result) => {
+            // Verifica si el usuario hizo clic en "Ok"
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "¡Thank you for your donation!",
+                    text: "Your support helps protect Java Rhinoceros.",
+                    icon: "success",
+                    confirmButtonText: "Close",
+                    background: "rgba(0, 0, 0, 0.818)",  // Color de fondo personalizado
+                    color: "#ffffff",
+                });
+            }
+        });
+    };
+
     return (
 
         <AnimatePresence>
@@ -18,7 +46,7 @@ function Rhino({ load, animal, prevAnimal }) {
                             <h1>R H I N O C E R O S</h1>
                             <h2>Java Rhinoceros: <br /> Strong, smart, but vulnerable</h2>
                             <p>It is one of the most endangered animals in the world. And if they used to occupy a vast area of Southeast Asia, they are now concentrated in a single territory, the island of Java. Only 40 to 60 individuals remain.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
 
                         </motion.div>
 
@@ -48,7 +76,7 @@ function Rhino({ load, animal, prevAnimal }) {
                             <h1>R H I N O C E R O S</h1>
                             <h2>Java Rhinoceros: <br /> Strong, smart, but vulnerable</h2>
                             <p>It is one of the most endangered animals in the world. And if they used to occupy a vast area of Southeast Asia, they are now concentrated in a single territory, the island of Java. Only 40 to 60 individuals remain.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
 
                         </motion.div>
 
@@ -78,7 +106,7 @@ function Rhino({ load, animal, prevAnimal }) {
                             <h1>R H I N O C E R O S</h1>
                             <h2>Java Rhinoceros: <br /> Strong, smart, but vulnerable</h2>
                             <p>It is one of the most endangered animals in the world. And if they used to occupy a vast area of Southeast Asia, they are now concentrated in a single territory, the island of Java. Only 40 to 60 individuals remain.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
 
                         </motion.div>
 
@@ -90,7 +118,7 @@ function Rhino({ load, animal, prevAnimal }) {
 
             {/* Transition Bear => Rhino */}
             {(animal === 'rhino' && prevAnimal === 'bear') &&
-                <motion.div className={style.rinhoCard} 
+                <motion.div className={style.rinhoCard}
                     initial={load ? false : { scaleX: 0.5, originX: 0 }}
                     animate={load ? false : { scaleX: 1, originX: 0 }}
                     transition={{ duration: 0.3 }}>
@@ -108,7 +136,7 @@ function Rhino({ load, animal, prevAnimal }) {
                             <h1>R H I N O C E R O S</h1>
                             <h2>Java Rhinoceros: <br /> Strong, smart, but vulnerable</h2>
                             <p>It is one of the most endangered animals in the world. And if they used to occupy a vast area of Southeast Asia, they are now concentrated in a single territory, the island of Java. Only 40 to 60 individuals remain.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
 
                         </motion.div>
 
@@ -122,7 +150,7 @@ function Rhino({ load, animal, prevAnimal }) {
             {(animal === 'bear' && prevAnimal === 'rhino') &&
                 <motion.div className={style.rinhoCard} style={animal !== 'rhino' && { position: 'absolute', top: 0, left: 342 }}
                     initial={load ? false : { scaleX: 1, originX: 0 }}
-                    animate={load ? false : { scaleX: 0.499, originX: 0, opacity: 0, display: 'none' }}  
+                    animate={load ? false : { scaleX: 0.499, originX: 0, opacity: 0, display: 'none' }}
                     transition={{ duration: 0.3 }}>
 
                     <motion.div className={style.rinhoCardCont}
@@ -138,7 +166,7 @@ function Rhino({ load, animal, prevAnimal }) {
                             <h1>R H I N O C E R O S</h1>
                             <h2>Java Rhinoceros: <br /> Strong, smart, but vulnerable</h2>
                             <p>It is one of the most endangered animals in the world. And if they used to occupy a vast area of Southeast Asia, they are now concentrated in a single territory, the island of Java. Only 40 to 60 individuals remain.</p>
-                            <button className={style.btnDonate}>DONATE NOW</button>
+                            <button className={style.btnDonate} onClick={handleDonation}>DONATE NOW</button>
 
                         </motion.div>
 
